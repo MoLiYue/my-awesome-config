@@ -391,6 +391,7 @@ awful.rules.rules = {
                 "Devtools", -- Firefox devtools
             },
             class = {
+		"iclingua",
                 "Gpick",
                 "Lxappearance",
                 "Nm-connection-editor",
@@ -497,22 +498,28 @@ awful.rules.rules = {
                 "riotclientux.exe",
                 "leagueclient.exe",
                 "^editor$",
-                "markdown_input"
+                "markdown_input",
+                "yuanshen.exe"
             },
+            -- class = {
+            --     "qutebrowser",
+            --     "Sublime_text",
+            --     "Subl3",
+            --     "Code",
+            --     "Google-chrome",
+            --     --"discord",
+            --     --"TelegramDesktop",
+            --     "firefox",
+            --     "Nightly",
+            --     "Steam",
+            --     "Lutris",
+            --     "Chromium",
+            --     "^editor$",
+            --     "markdown_input"
+            --     -- "Thunderbird",
+            -- },
             class = {
-                "qutebrowser",
-                "Sublime_text",
-                "Subl3",
-                --"discord",
-                --"TelegramDesktop",
-                "firefox",
-                "Nightly",
-                "Steam",
-                "Lutris",
-                "Chromium",
-                "^editor$",
-                "markdown_input"
-                -- "Thunderbird",
+                "^."
             },
             type = {
               "splash"
@@ -545,6 +552,7 @@ awful.rules.rules = {
     {
         rule_any = {
             class = {
+		"icalingua",
                 "TelegramDesktop",
                 "firefox",
                 "Nightly",
@@ -847,6 +855,7 @@ awful.rules.rules = {
             class = {
                 "firefox",
                 "Nightly",
+                "Google-chrome"
                 -- "qutebrowser",
             },
         },
@@ -855,7 +864,7 @@ awful.rules.rules = {
             instance = { "Toolkit" },
             type = { "dialog" }
         },
-        properties = { screen = 1, tag = awful.screen.focused().tags[1] },
+        properties = { screen = 1, tag = awful.screen.focused().tags[2] },
     },
 
     -- Games
@@ -873,7 +882,8 @@ awful.rules.rules = {
                 "Terraria.bin.x86",
                 "dontstarve_steam",
                 "Wine",
-                "trove.exe"
+                "trove.exe",
+                "yuanshen.exe"
             },
             instance = {
                 "love.exe",
@@ -883,7 +893,7 @@ awful.rules.rules = {
                 "glyphclientapp.exe"
             },
         },
-        properties = { screen = 1, tag = awful.screen.focused().tags[2] }
+        properties = { screen = 1, tag = awful.screen.focused().tags[10] }
     },
 
     -- Chatting
@@ -900,9 +910,10 @@ awful.rules.rules = {
                 "zoom",
                 "weechat",
                 "6cord",
+                "icalingua"
             },
         },
-        properties = { screen = 1, tag = awful.screen.focused().tags[3] }
+        properties = { screen = 1, tag = awful.screen.focused().tags[4] }
     },
 
     -- Editing
@@ -910,11 +921,13 @@ awful.rules.rules = {
         rule_any = {
             class = {
                 "^editor$",
+                "Vivado",
+                "Code"
                 -- "Emacs",
                 -- "Subl3",
             },
         },
-        properties = { screen = 1, tag = awful.screen.focused().tags[4] }
+        properties = { screen = 1, tag = awful.screen.focused().tags[9] }
     },
 
     -- System monitoring
@@ -927,7 +940,7 @@ awful.rules.rules = {
                 "htop",
             },
         },
-        properties = { screen = 1, tag = awful.screen.focused().tags[5] }
+        properties = { screen = 1, tag = awful.screen.focused().tags[1] }
     },
 
     -- Image editing
@@ -938,7 +951,7 @@ awful.rules.rules = {
                 "Inkscape",
             },
         },
-        properties = { screen = 1, tag = awful.screen.focused().tags[6] }
+        properties = { screen = 1, tag = awful.screen.focused().tags[5] }
     },
 
     -- Mail
@@ -966,7 +979,7 @@ awful.rules.rules = {
                 "Steam",
             }
         },
-        properties = { screen = 1, tag = awful.screen.focused().tags[8] }
+        properties = { screen = 1, tag = awful.screen.focused().tags[10] }
     },
 
     -- Miscellaneous
@@ -988,7 +1001,7 @@ awful.rules.rules = {
         except_any = {
             type = { "dialog" }
         },
-        properties = { screen = 1, tag = awful.screen.focused().tags[10] }
+        properties = { screen = 1, tag = awful.screen.focused().tags[8] }
     },
 
 }
